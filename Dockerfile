@@ -1,8 +1,8 @@
-FROM ubuntu:18.04 
+FROM ubuntu:16.04 
 
 ENV DEBIAN_FRONTEND noninteractive 
 
-RUN apt-get update && apt-get install -y python-pip apache2 tomcat7 
+RUN apt-get update && apt-get install -y python-pip apache2 tomcat9
 
 RUN pip install supervisor 
 
